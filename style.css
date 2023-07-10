@@ -1,0 +1,591 @@
+/* Importando fuente de google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Roboto:wght@100;400;500&display=swap");
+
+/* Uso de variables para la paleta de colores  */
+:root {
+  --color1: #768fa6;
+  --color2: #fff;
+  --color3: #eee;
+  --color4: #344856;
+  /* dos fuentes de Google Fonts*/
+  --fuente-principal: "Roboto", sans-serif;
+  --fuente-titulo: "Nunito", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+}
+video {
+  display: block;
+}
+
+h1,
+h2 {
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+
+.top-header {
+  height: 75px;
+  background-color: var(--color3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-top {
+  flex-basis: 90%;
+}
+
+.fila-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-header-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-header-cont a {
+  margin: 20px;
+  font-family: var(--fuente-principal);
+  color: var(--color4);
+  text-decoration: none;
+}
+
+.horario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.horario i {
+  background-color: var(--color2);
+  color: var(--color4);
+  font-size: 15px;
+  padding: 10px;
+  margin: auto 15px;
+}
+
+.horario a {
+  color: var(--color4);
+}
+.horario a:visited {
+  color: inherit;
+}
+
+.horario i:visited {
+  color: inherit;
+}
+
+.horario span {
+  font-size: 10px;
+  align-content: center;
+}
+
+header {
+  color: var(--color4);
+}
+.cabecera-cont {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.menu-cont {
+  max-width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.list-menu {
+  display: flex;
+  flex-direction: row;
+}
+.list-menu li {
+  margin: 0 5px;
+  font-family: var(--fuente-principal);
+  color: var(--color4);
+  list-style: none;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.list-menu li a:hover {
+  background-color: var(--color4);
+  color: var(--color2);
+  border-radius: 15px;
+}
+
+.list-menu li a {
+  padding: 10px;
+  text-decoration: none;
+  color: var(--color4);
+}
+
+.cabecera-foot {
+  max-width: 80%;
+  padding: 60px;
+  margin: auto;
+  font-size: 15px;
+}
+
+h1 {
+  font-family: var(--fuente-titulo);
+}
+
+p {
+  font-family: var(--fuente-principal);
+  text-align: justify;
+}
+
+.contenedor-do {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.columna .columna-doctora {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Se agrega transformacion a la imagen en la seccion que hacemos  */
+.columna-doctora img {
+  transform: scale(1);
+  border-radius: 4px 4px 4px 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.columna-doctora img:hover {
+  transform: scale(1.2);
+}
+
+.columna {
+  margin-top: 50px;
+  padding: 0 10px;
+  text-align: center;
+}
+.column h3{
+  text-align: center;
+}
+.columna div {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+
+.columna div p {
+  margin-bottom: 25px;
+}
+.columna div h1 {
+  margin-bottom: 25px;
+}
+
+.columna img {
+  filter: grayscale(1%) sepia(39%) brightness(101%) hue-rotate(4deg)
+    saturate(81%);
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para el banner */
+
+.ajustar_banner {
+  width: 100%;
+}
+
+/* Estilos generales aplicados para las secciones */
+
+.contenedor-secc {
+  max-width: 75%;
+  margin: 50px auto;
+  line-height: 1.5;
+}
+
+/* Estilos especificos para la seccion de noticias */
+.head-news {
+  display: flex;
+}
+
+.head-news p {
+  margin: 20px 20px 40px 0;
+}
+
+/* Estilos para la seccion de columna de noticias */
+.news-col {
+  height: 600px;
+  display: flex;
+}
+
+/* sombreado de textos de los titulos de  */
+
+/* Estilos para los contenidos de noticias columnas y filas */
+
+.news-col-col1 {
+  display: flex;
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+.news-col-col1 p {
+  margin: 20px 20px 40px 0;
+}
+
+.news-col-col1 img {
+  width: 100%;
+  height: 250px;
+}
+
+/* Bordes, sombreado de cajas y sombreado de textos */
+.news-col-row {
+  margin-right: 10px;
+  border: 1px solid var(--color3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.news-col-col2 {
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 20px;
+  border: 1px solid var(--color3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+}
+
+/* Estilos especificos para la seccion de galeria de imagenes */
+.head-gal {
+  background-color: var(--color1);
+  margin-bottom: 30px;
+  height: 200px;
+  color: var(--color2);
+}
+
+/* Estilos especificos para la seccion de la imagen fija */
+
+.fija-contador-imagen {
+  background-image: url(./img/fija/fijacontadores.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  background-attachment: fixed;
+  background-color: var(--color1);
+  height: 400px;
+  color: var(--color4);
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fija-contador-imagen div {
+  flex-basis: 90%;
+  text-align: center;
+  margin: 15px;
+  font-size: 15px;
+}
+
+.head-gal h1 {
+  font-size: 40px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.head-gal p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sec-gal-esp {
+  display: flex;
+  justify-content: space-around;
+  /* margin-bottom: 30px; */
+}
+
+/* aplicando transiciones en el contenedor sec-gal-esp seccion de galeria de imagenes */
+
+.sec-gal-esp li {
+  font-size: 20px;
+  padding: 15px 15px;
+  margin-bottom: 15px;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.353);
+  color: var(--color2);
+  box-shadow: 10px 10px 5px 0px rgba(118, 143, 166, 0.75);
+  transition: all 300ms ease-in-out;
+}
+
+.sec-gal-esp li:hover {
+  border: 1px solid var(--color1);
+  background-color: var(--color2);
+  color: var(--color1);
+  box-shadow: 0px 5px 25px var(--color6);
+}
+
+.sec-gal-img {
+  margin-top: 0px;
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+}
+.sec-gal-img .columna {
+  text-align: center;
+}
+
+.sec-gal-img img {
+  margin: 10px;
+  max-width: 100%;
+  height: 250px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  position: relative;
+  overflow: hidden;
+  flex: 100%;
+  padding: 15px;
+}
+
+.column-img-text:hover {
+  opacity: 1;
+}
+
+.column img {
+  filter: grayscale(1%) brightness(101%) hue-rotate(4deg) saturate(81%);
+  max-width: 100%;
+  box-shadow: -1px 1px 18px 0px rgba(118, 143, 166, 0.73);
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.column:hover img {
+  transform: scale(1.2);
+}
+
+.column-img-text {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 25px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px 4px 4px 4px;
+  background-color: rgba(43, 55, 67, 0.493);
+  color: var(--color2);
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.95s ease-in-out;
+  opacity: 0;
+}
+
+.column:hover {
+  opacity: 1;
+}
+
+.sec-gal-img p {
+  text-align: center;
+}
+
+/* Sección Nuestros doctores */
+
+.contenedor {
+  margin-top: 60px;
+  margin-left: 95px;
+  margin-right: 95px;
+  
+}
+
+.fila {
+  display: flex; /*activar flexbox*/
+  flex-direction: row; /*coloca el contenido de izquierda a derecha*/
+  justify-content: center;
+  flex-basis: 100%;
+}
+.ajustar_ancho {
+  width: 50%;
+  height: auto;
+}
+.doc-cont {
+  height: 50vh;
+  background-color: var(--color1);
+  color: var(--color3);
+  display: flex;
+}
+.doc-col {
+  max-width: 75%;
+  margin: 0 auto;
+  display: flex;
+  line-height: 2;
+  padding: 15px;
+}
+
+.video-responsive {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+}
+.secc-cont-video {
+  position: relative;
+}
+.secc-cont-paragraph {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color3);
+  font-size: 40px;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.7s ease-in-out;
+  /* text-align: center; */
+  opacity: 0;
+}
+
+.secc-cont-paragraph::after {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  left: calc(50% - 150px);
+  width: 300px;
+  height: 3px;
+  background-color: var(--color3);
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.secc-cont-video:hover .secc-cont-paragraph {
+  opacity: 1;
+}
+
+.doc-col-1 {
+  flex: 50%;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.doc-col-1 img {
+  max-width: 100%;
+  padding-top: 5px;
+  height: 350px;
+}
+
+.ajustar-img {
+  max-width: 95%;
+}
+
+.imagen {
+  border-radius: 50%;
+  border: solid 1px var(--color1);
+  box-shadow: -1px 1px 19px 1px var(--color1);
+  margin: 8.65px;
+}
+
+/* Sección Footer*/
+
+.cont-foot {
+  height: 250px;
+  background-color: var(--color3);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 40px;
+}
+
+/* Estilos para el texto del coyright */
+.foot-text {
+  font-size: 15px;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para las redes sociales */
+.redes-sociales {
+  margin-right: 50px;
+}
+
+.redes-sociales i {
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+.icono-desplazar {
+  /* Decoracion del boton */
+  width: 45px;
+  height: 45px;
+  background-color: var(--color3);
+  color: var(--color1);
+  border: 2px solid var(--color1);
+  text-align: center;
+  line-height: 45px;
+  /* Posicionamiento */
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.icono-desplazar:hover {
+  background-color: var(--color4);
+  transform: translatey(-5px);
+  box-shadow: -3px 8px 15px 0px var(--color1);
+}
+.opcion-seleccionada{
+
+  background-color: var(--color4);
+  border-radius: 15px;
+  color: var(--color3)!important;
+}
+#barra_ubicacion-reservas{
+  background-color: var(--color5);
+  color: var(--color3);
+  text-align: center;
+}
+#barra-ubicacion-reservas h1{
+  font-family: var(--fuente-principal);    
+}
+#barra-ubicacion-reservas h2{
+  text-align: center;
+}
+.barra-ubicacion-seguro{
+  font-size: 40px;
+}
+.inserto-video-reservas{
+  position: relative;
+  place-items: center;
+}
+
+.inserto-video-leyenda h1{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 100%;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 100;
+  color: var(--color3);
+}
+
+.video-responcive{
+  aspect-ratio: 16/9;  /* 16/9 video HD (1280x720) */
+                        /* 4/3 (640x480)*/
+                        /* 21/9*/
+width: 100%;
+height: auto;
+}
+.contexto {
+  color:#344856;
+  width: 100%;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

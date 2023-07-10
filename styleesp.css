@@ -1,0 +1,185 @@
+/* Importando fuente de google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Roboto:wght@100;400;500&display=swap");
+
+/* Uso de variables para la paleta de colores  */
+:root {
+  --color1: #768fa6;
+  --color2: #fff;
+  --color3: #eee;
+  --color4: #344856;
+
+  /* dos fuentes de Google Fonts*/
+  --fuente-principal: "Roboto", sans-serif;
+  --fuente-titulo: "Nunito", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+}
+
+h1,
+h2,
+p {
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cont-title {
+  background-color: var(--color1);
+}
+.cont-home {
+  display: flex;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--color2);
+}
+
+.ajustar_contenedor {
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10vh;
+}
+
+.row-esp {
+  display: flex;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  justify-content: center;
+  flex: 100%;
+}
+.row-esp img {
+  max-width: 100%;
+}
+.cont-img {
+  position: relative;
+}
+.column-esp {
+  margin: 10px;
+  line-height: 1.5;
+}
+.transparent-hidden {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  /* opacity: 1; */
+  background-color: rgba(255, 255, 255, 0.579);
+  transition: all 0.7s ease-in-out;
+}
+.transparent-hidden p {
+  color: var(--color4);
+  font-size: large;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.transparent-hidden:hover {
+  opacity: 0;
+}
+.read_more {
+  margin-top: 30px;
+  height: 40px;
+  width: 40%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 13px 13px 13px 13px;
+  padding: 5px;
+  list-style: none;
+  background-color: var(--color1);
+  color: var(--color2);
+}
+
+.cont-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 80%;
+  height: 20vh;
+  font-weight: 700;
+}
+
+.lista {
+  position: relative;
+  margin: 0 20px;
+  background-color: var(--color4);
+  color: var(--color3);
+  list-style: none;
+  padding: 4px 16px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--fuente-principal);
+}
+.lista::after {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: -28px;
+  right: calc(50% - 15px);
+  border-top: 15px solid var(--color4);
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
+.lista:hover {
+  background-color: var(--color3);
+  color: var(--color4);
+  box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.75);
+}
+.lista:hover::after {
+  font-weight: 400;
+  border-top: 15px solid var(--color3);
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
+.contenedor-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color4);
+  color: var(--color3);
+  width: 100%;
+  height: 150px;
+  font-size: 700;
+}
+
+.contenedor-contact a {
+  text-decoration: none;
+  list-style: none;
+  background-color: var(--color1);
+  color: var(--color3);
+  padding: 10px;  
+  border-radius: 20px;
+  font-weight: 700;
+  box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contenedor-contact p:hover, .contenedor-contact a:hover{
+  background-color: var(--color3);
+  color: var(--color1);
+}
+
+.contenedor-contact p {
+  font-size: 2em;
+  top: 50%;
+  border-radius: 20px;
+  /* box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.75); */
+  padding: 10px;
+}
